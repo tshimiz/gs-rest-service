@@ -13,5 +13,10 @@ pipeline {
 ./gradlew build'''
       }
     }
+    stage('Test') {
+      steps {
+        sh 'echo \'hoge\''
+      }
+    }
   }
 }
