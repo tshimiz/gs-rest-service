@@ -32,7 +32,9 @@ dependencies {
 
 jar {
     manifest {
-        attributes "Main-Class" : "hello.Application.Main"
+        attributes(
+            "Main-Class" : "hello.Application"
+        )
     }
     from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
 }
