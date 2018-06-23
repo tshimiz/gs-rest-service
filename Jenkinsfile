@@ -2,7 +2,6 @@ pipeline {
   agent {
     docker {
       image 'openjdk'
-      args '-p 8080:8080'
     }
 
   }
